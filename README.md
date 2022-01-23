@@ -13,7 +13,6 @@
 <img src="images/image.png" width="700" height="500">
 </p>
 
-- Web servisi, XML tabanlı mesajlaşmayı esas aldığından haberleşecek sistemlerin birbiriyle uyumlu olması gerekmez. 
 
 ## REST (Representational State Transfer)nedir?
 
@@ -22,7 +21,7 @@
 
 - REST, web servis oluşturmak için kullanılan web servis yöntemlerinden birisidir.
 
-- REST programlama dilinden bağımsız olarak web servis oluşturmak için kullanılan bir yapıdır.
+- REST programlama dilinden bağımsız olarak kullanılan bir yapıdır.
 
 - REST, HTTP protokolüne ait HTTP yöntemlerini ve HTTP durum kodlarını kullanarak gelen isteklere XML, JSON, CSV vb. olarak cevap verir.
 
