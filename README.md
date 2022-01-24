@@ -78,8 +78,7 @@ soap:encodingStyle="http://www.w3.org/2003/05/soap-encoding">
 - SOAP için WSDL ile tanımlama yapmak gerekirken REST için böyle bir zorunluluk yoktur.Bir dile ihtiyaç duymadan HTTP metodlarıyla tasarlanabildiği için REST’i kullanması ve tasarlaması daha kolaydır.
    
 -	SOAP için birçok geliştirme aracı mevcuttur, REST için geliştirme araçlarına ihtiyaç duyulmaz.
--	SOAP; XML-Scheme kullanırken REST; URI-Scheme kullanır yani metotlar için URI’ler tanımlanır.
--	
+-	SOAP; XML-Scheme kullanırken REST; URI-Scheme kullanır yani metotlar için URI’ler tanımlanır.	
 - Her ikisi de HTTP protokolünü kullanırlar. Fakat REST için HTTP zorunluluğu varken SOAP; TCP, SMTP gibi başka protokollerle de çalışabilir. REST yaklaşımı HTTP metotlarını kullanarak işlerini görür. GET,POST,PUT,DELETE vs.
 -REST basit HTTP GET metodunu kullandığı için Cache leme işlemi daha kolaydır. SOAP ile Cache leme yapabilmek için karmaşık XML requestleri yapılmalıdır.
 - İkisi de HTTPS destekler, SOAP için WS-SECURITY adlı bir eklenti mevcuttur.
