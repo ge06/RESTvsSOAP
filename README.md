@@ -29,7 +29,6 @@ Aşağıdaki HTTP yöntemleri, yaygın olarak REST tabanlı mimaride kullanılı
 REST API ile hazırlanmış web servislerinde çıktı biçimi olarak genellikle JSON kullanılır.
 
 - REST(Representational State Transfer), dağıtık sistemler tasarlamak için kullanılan bir mimari tarzdır.
-- REST, client-server arasındaki haberleşmeyi sağlayan HTTP protokolü üzerinden çalışan bir mimaridir.
 - REST ,servis yönelimli mimari üzerine oluşturulan yazılımlarda kullanılan bir transfer yöntemidir.
 - İstemci ve sunucu arasında XML ve JSON verilerini taşıyarak uygulamanın haberleşmesini sağlar.REST mimarisini kullanan servislere ise RESTful servis denir.
 
