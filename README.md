@@ -34,7 +34,7 @@ REST API ile hazırlanmış web servislerinde çıktı biçimi olarak genellikle
 
 ## SOAP Nedir?
 
-* SOAP (Basit Nesne Erişim Protokolü) dağıtık uygulamalarda ve web servislerinin haberleşmesinde kullanılmak üzere tasarlanan, RPC (Remote Procedure Call) modelini kullanan, istemci/sunucu mantığına dayalı bir protokoldür. 
+* SOAP (Basit Nesne Erişim Protokolü) dağıtık uygulamalarda ve web servislerinin haberleşmesinde kullanılmak üzere tasarlanan, RPC (Remote Procedure Call) modelini kullanan, istemci/sunucu mantığına dayalı bir protokoldür.RPC protokolü, istemciler ve sunucular arasındaki iletişimi istemci makineden gelen çağrıyı isteğe dönüştürerek yapar.
 * SOAP, web üzerinden fonksiyonları kullanmak için geliştirilmiş bir sistemin XML tabanlı kurallar topluluğudur. SOAP ile ilgili bütün mesajlar XML formatında iletilir ve temel olarak bir SOAP mesajı 3 şekilde oluşabilir:
   - Metot Çağırımı
   - Cevap Mesajı
