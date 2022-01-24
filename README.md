@@ -1,17 +1,4 @@
-# 
-## Web Servisleri nedir?
--  Web servisi, bilgisayarlar arasında ağ üzerinden etkileşimi ve uyumluluğu sağlayacak yazılım sistemidir. Yerel ağ ve internet üzerinden çağrılabilecek yazılım bileşenleridir.
 
-- Web servislerinin temel bir özelliği, uygulamaların çeşitli dillerde yazılabilmesi ve istemciler ve sunucular arasındaki bir web servisi aracılığıyla birbirleriyle veri alışverişi yaparak iletişim kurabilmeleridir. İstemci, bir web hizmetini XML yoluyla istek göndererek çağırır ve hizmet daha sonra bir XML yanıtıyla yanıt verir.
-
-- Bir web hizmeti, HTML, XML, WSDL, SOAP ve diğer açık standartlarla çok sayıda uygulama arasındaki iletişimi destekler.
-
-- Web servisleri etkileşim kurmak için HTTP üzerinden XML mesajı gönderilir. 
-
-- Web servisleri ile, başkası tarafından geliştirilmiş bir yazılım kullanılabilir, böylelikle bu yazılımın tekrar yazılması gerekmez. 
-<p align="center">
-<img src="images/image.png" width="700" height="500">
-</p>
 
 
 ## REST (Representational State Transfer)nedir?
