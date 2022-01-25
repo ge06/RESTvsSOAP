@@ -81,6 +81,7 @@ soap:encodingStyle="http://www.w3.org/2003/05/soap-encoding">
 - Her ikisi de HTTP protokolünü kullanırlar. Fakat REST için HTTP zorunluluğu varken SOAP; TCP, SMTP gibi başka protokollerle de çalışabilir. REST yaklaşımı HTTP metotlarını kullanarak işlerini görür. GET,POST,PUT,DELETE vs.
 -REST basit HTTP GET metodunu kullandığı için Cache leme işlemi daha kolaydır. SOAP ile Cache leme yapabilmek için karmaşık XML requestleri yapılmalıdır.
 - İkisi de HTTPS destekler, SOAP için WS-SECURITY adlı bir eklenti mevcuttur.
+- SOAP, REST’den daha fazla bant genişliği ve kaynak gerektirir.
 	
 -	Uygulama Hızı: Uygulamanızın daha hızlı çalışmasını istiyorsanız REST kullanmanız yararınıza olacaktır.
 
