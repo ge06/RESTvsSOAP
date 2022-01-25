@@ -110,7 +110,7 @@ SOAP-ENV:encodingStyle
 
 # GRPC Nedir? Neden REST'in Rakibi Olarak Gösterilmektedir?
 
-gRPC Google'ın geliştirdiği açık kaynaklı bir veri değişim teknolojisidir. Soap gibi rpc kullanılmaktadır. İletişim protobuf dosyaları tanımlanarak ve bu dosyalardan auto-generate edilen kodlar ile iki taraf arasında katı bir şekilde (strictly) mutabakat sağlanmış bir şekilde HTTP 2 kullanılarak yapılmaktadır. HTTP 2, 1.1 versiyonu gibi her iletişimde yeni bir tcp handshake yapmaz, işlem bitene kadar hali hazırda açık olan connection üzerinden iletişim sağlanmaya devam eder. Bu sayede gereksiz bir latency yükünden kurtulunmuş olunur. gRPC, REST gibi unary iletişime de olanak sağladığı gibi server-streaming, client-streaming ve bi-directional streaminge de olanak sağlamaktadır. Protobuf kullanılarak protoc ile birden farklı programlama dilleri için gerekli boilerplate kodlar otomatik olarak generate edilebilmektedir. Server ile Client arasında aynı programlama dili olması zorunluluğu yoktur bu durumu ile SOAP ve REST'e benzemektedir.
+gRPC Google'ın geliştirdiği açık kaynaklı bir veri değişim teknolojisidir. Soap gibi rpc kullanılmaktadır. İletişim protobuf dosyaları tanımlanarak ve bu dosyalardan auto-generate edilen kodlar ile iki taraf arasında katı bir şekilde (strictly) mutabakat sağlanmış bir şekilde HTTP 2 kullanılarak yapılmaktadır. HTTP1.1 de gönderim için mesajlar birbirini bekler paralel gönderim yapılmaz, bu da latency oluşmasına neden olur. 2. versiyonda ise aynı connection üzerinden paralel gönderim yapılabilir, bu sayede gereksiz bir latency yükünden kurtulunmuş olunur. gRPC, REST gibi unary iletişime de olanak sağladığı gibi server-streaming, client-streaming ve bi-directional streaminge de olanak sağlamaktadır. Protobuf kullanılarak protoc ile birden farklı programlama dilleri için gerekli boilerplate kodlar otomatik olarak generate edilebilmektedir. Server ile Client arasında aynı programlama dili olması zorunluluğu yoktur bu durumu ile SOAP ve REST'e benzemektedir.
 
 ## Örnek proto dosyası:
 
@@ -142,7 +142,7 @@ service GreetService {
 
 ## GRPC vs REST
 
-- Rest için genellikle JSON/XML serialize/desiarilize işlemlerine ihtiyaç duyulmakta ve bu işlemler yapılırken hatalar oluşabilmekte aynı zamanda da sisteme bir yük bindirilmek durumunda kalınmaktadır. gRPC mesajları anlamlı bir hale getirirken protobuf dosyasını kullanır.
+- Rest için genellikle JSON/XML serialize/deserialize işlemlerine ihtiyaç duyulmakta ve bu işlemler yapılırken hatalar oluşabilmekte aynı zamanda da sisteme bir yük bindirilmek durumunda kalınmaktadır. gRPC mesajları anlamlı bir hale getirirken protobuf dosyasını kullanır.
 
 - Rest için gelen giden mesaj yapısında iletişimin human-readable kalmasını sağlamak adına fazladan alanlar kullanılır, bu da mesaj boyutunu artırmaktadır (Aynı mesaj grpcde 5 katı daha az byte ile gönderilebilmektedir). gRPC de ise protobuf dosyası üzerinden iletişim sağlanır, human-readable değildir, gelen giden mesaj formatı binary formdadır ve debug etmesi REST'e göre zor olmaktadır ama binary format serialization/deserialization işlemlerinin çok kısa sürede tamamlanmasını da sağlamaktadır.
 
